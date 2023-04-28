@@ -1,0 +1,564 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/simulation/modelsim
+vadder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1682134140
+!i10b 1
+!s100 b9H^3F1k=j]Bz53HB0`B@0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IY@nZ4ODJiP7;zDcFldNN@2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z4 w1652413036
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/adder.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/adder.sv
+!i122 19
+L0 1 9
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1682134140.000000
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/adder.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/adder.sv|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+valu
+R1
+!s110 1682134141
+!i10b 1
+!s100 QJC;Y6DbeJS[[<9hY`Zj32
+R2
+I:_ToL=Y7YHkR:l^DSQl@D2
+R3
+S1
+R0
+R4
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/alu.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/alu.sv
+!i122 20
+L0 1 37
+R5
+r1
+!s85 0
+31
+!s108 1682134141.000000
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/alu.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/alu.sv|
+!i113 1
+R6
+R7
+vcontrol_unit
+R1
+Z8 !s110 1682134142
+!i10b 1
+!s100 4hTz8>8BmlCJQoRV?T3]g3
+R2
+I9c74No=i[H<9BczSiW;fQ0
+R3
+S1
+R0
+R4
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/control_unit.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/control_unit.sv
+!i122 21
+L0 1 188
+R5
+r1
+!s85 0
+31
+Z9 !s108 1682134142.000000
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/control_unit.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/control_unit.sv|
+!i113 1
+R6
+R7
+vdmem_ram
+R1
+R8
+!i10b 1
+!s100 NDl6N@_l8WHjNKYONzPj@1
+R2
+IMBW5a=g[9lOi2ibIL_FEI2
+R3
+S1
+R0
+w1682131042
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/dmem_ram.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/dmem_ram.sv
+!i122 22
+L0 1 44
+R5
+r1
+!s85 0
+31
+R9
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/dmem_ram.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/dmem_ram.sv|
+!i113 1
+R6
+R7
+vdmem_rom
+R1
+Z10 !s110 1682134143
+!i10b 1
+!s100 K=2:JdflO4hm3nIcRQjOE3
+R2
+IP_iGUJ7S:19F:mG`ORYOd2
+R3
+S1
+R0
+w1681584882
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/dmem_rom.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/dmem_rom.sv
+!i122 23
+Z11 L0 1 17
+R5
+r1
+!s85 0
+31
+Z12 !s108 1682134143.000000
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/dmem_rom.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/dmem_rom.sv|
+!i113 1
+R6
+R7
+vimem
+R1
+R10
+!i10b 1
+!s100 L8P?zT_28lh9[OBbZ2h631
+R2
+IXDoo^4<WeH4z1?Q91J=Y70
+R3
+S1
+R0
+w1681584931
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/imem.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/imem.sv
+!i122 24
+R11
+R5
+r1
+!s85 0
+31
+R12
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/imem.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/imem.sv|
+!i113 1
+R6
+R7
+vjump_unit
+R1
+!s110 1682134144
+!i10b 1
+!s100 8jPHfYX<77GHiGPTjJBBl2
+R2
+INJGONh>zdJ4i_FZN^2Q^T1
+R3
+S1
+R0
+R4
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/jump_unit.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/jump_unit.sv
+!i122 25
+L0 1 19
+R5
+r1
+!s85 0
+31
+!s108 1682134144.000000
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/jump_unit.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/jump_unit.sv|
+!i113 1
+R6
+R7
+vmemoryAccess
+R1
+Z13 !s110 1682134145
+!i10b 1
+!s100 25V[ojR1=>SBUOBS;k0lH0
+R2
+In7ZO9BHfV:Sc43llDR4DW0
+R3
+S1
+R0
+R4
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/memoryAccess.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/memoryAccess.sv
+!i122 26
+L0 1 11
+R5
+r1
+!s85 0
+31
+Z14 !s108 1682134145.000000
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/memoryAccess.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/memoryAccess.sv|
+!i113 1
+R6
+R7
+nmemory@access
+vmemoryAccess_tb
+R1
+R13
+!i10b 1
+!s100 1<S:Q>0Kda9e:62G_dJ?F1
+R2
+I7ZjL0HR?oXZ8hdXA:Hg@=2
+R3
+S1
+R0
+w1682132226
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/memoryAccess_tb.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/memoryAccess_tb.sv
+!i122 27
+L0 2 60
+R5
+r1
+!s85 0
+31
+R14
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/memoryAccess_tb.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/memoryAccess_tb.sv|
+!i113 1
+R6
+R7
+nmemory@access_tb
+vmemoryController
+R1
+Z15 !s110 1682134146
+!i10b 1
+!s100 lAVXBUbilVF=b>QU4JVE30
+R2
+IA28cff3HOz^jI;i=;>2S90
+R3
+S1
+R0
+w1652503820
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/memoryController.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/memoryController.sv
+!i122 28
+Z16 L0 1 45
+R5
+r1
+!s85 0
+31
+Z17 !s108 1682134146.000000
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/memoryController.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/memoryController.sv|
+!i113 1
+R6
+R7
+nmemory@controller
+vmux_2to1
+R1
+R15
+!i10b 1
+!s100 b8jb8T=aW<fXX<LDbGfFn0
+R2
+Iieo3bLlhJZbHCCZmAz<z<2
+R3
+S1
+R0
+R4
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/mux_2to1.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/mux_2to1.sv
+!i122 29
+L0 1 18
+R5
+r1
+!s85 0
+31
+R17
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/mux_2to1.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/mux_2to1.sv|
+!i113 1
+R6
+R7
+vmux_4to1
+R1
+Z18 !s110 1682134147
+!i10b 1
+!s100 TU?hDiSIaLk4S5gdlXSf]3
+R2
+I9S4[[KX`B8Si2hPK@3?RX3
+R3
+S1
+R0
+R4
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/mux_4to1.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/mux_4to1.sv
+!i122 30
+L0 1 24
+R5
+r1
+!s85 0
+31
+Z19 !s108 1682134147.000000
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/mux_4to1.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/mux_4to1.sv|
+!i113 1
+R6
+R7
+vpc_register
+R1
+R18
+!i10b 1
+!s100 `djE<hC9=CY=bA>61Z9JA1
+R2
+I_^M`0MNS6jA<Mo2BnZ1YB3
+R3
+S1
+R0
+R4
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/pc_register.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/pc_register.sv
+!i122 31
+L0 1 36
+R5
+r1
+!s85 0
+31
+R19
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/pc_register.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/pc_register.sv|
+!i113 1
+R6
+R7
+vprocesador_pipeline
+R1
+!s110 1682134148
+!i10b 1
+!s100 zOXPfCj6zlS<lMRKkP9Eh2
+R2
+I8ZPE?I;ZoUHKPmHF6O:OT0
+R3
+S1
+R0
+w1652503866
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/procesador_pipeline.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/procesador_pipeline.sv
+!i122 32
+L0 1 108
+R5
+r1
+!s85 0
+31
+!s108 1682134148.000000
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/procesador_pipeline.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/procesador_pipeline.sv|
+!i113 1
+R6
+R7
+vregister_file
+R1
+!s110 1682134155
+!i10b 1
+!s100 cco9W;Og>dA@Q3FeSaC?d3
+R2
+I7^05_n4H@OA0iLWO^OJan3
+R3
+S1
+R0
+R4
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/register_file.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/register_file.sv
+!i122 39
+L0 1 157
+R5
+r1
+!s85 0
+31
+Z20 !s108 1682134154.000000
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/register_file.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/register_file.sv|
+!i113 1
+R6
+R7
+vsegment_ex_mem
+R1
+!s110 1682134154
+!i10b 1
+!s100 [dJczfh5_=Az6ACnXB[R90
+R2
+I_o^EzYa5icK`>=^F5m8]k0
+R3
+S1
+R0
+R4
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_ex_mem.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_ex_mem.sv
+!i122 38
+L0 1 32
+R5
+r1
+!s85 0
+31
+R20
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_ex_mem.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_ex_mem.sv|
+!i113 1
+R6
+R7
+vsegment_id_ex
+R1
+Z21 !s110 1682134153
+!i10b 1
+!s100 c0Q<0SoBORhRQJ^BQW:eZ2
+R2
+I5ZQ3<S6`hc3lGBmH?H1e[2
+R3
+S1
+R0
+R4
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_id_ex.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_id_ex.sv
+!i122 37
+L0 1 55
+R5
+r1
+!s85 0
+31
+Z22 !s108 1682134153.000000
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_id_ex.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_id_ex.sv|
+!i113 1
+R6
+R7
+vsegment_if_id
+R1
+R21
+!i10b 1
+!s100 UhJ]SBREgeke1he>Zm<2`2
+R2
+Ic?HiTB3SHkW3KoJMbViG53
+R3
+S1
+R0
+R4
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_if_id.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_if_id.sv
+!i122 36
+R16
+R5
+r1
+!s85 0
+31
+R22
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_if_id.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_if_id.sv|
+!i113 1
+R6
+R7
+vsegment_if_id_tb
+R1
+Z23 !s110 1682134151
+!i10b 1
+!s100 18KaXEezJ7@d;]91SO]OO0
+R2
+IB5K=3fOGHAz@aCX47P;Ez3
+R3
+S1
+R0
+w1652213720
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_if_id_tb.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_if_id_tb.sv
+!i122 35
+L0 1 49
+R5
+r1
+!s85 0
+31
+Z24 !s108 1682134151.000000
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_if_id_tb.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_if_id_tb.sv|
+!i113 1
+R6
+R7
+vsegment_mem_wb
+R1
+R23
+!i10b 1
+!s100 9gd@SXMUUd00<kznBzHem2
+R2
+IG6VJUhlR=d_=McmP27^K30
+R3
+S1
+R0
+R4
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_mem_wb.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_mem_wb.sv
+!i122 34
+L0 1 28
+R5
+r1
+!s85 0
+31
+R24
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_mem_wb.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/segment_mem_wb.sv|
+!i113 1
+R6
+R7
+vsign_extend
+R1
+!s110 1682134150
+!i10b 1
+!s100 M<Vm=N`UlOVZ=S0T6889_0
+R2
+IMj??>5R;UWOE79U`eLEZm3
+R3
+S1
+R0
+R4
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/sign_extend.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/sign_extend.sv
+!i122 33
+L0 1 20
+R5
+r1
+!s85 0
+31
+!s108 1682134150.000000
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/sign_extend.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/sign_extend.sv|
+!i113 1
+R6
+R7
+vtestbench
+R1
+!s110 1682134161
+!i10b 1
+!s100 mB@]B=CFPFGV@V<`YdkDL3
+R2
+Io?XSTh4jTI>ahV>zhEmUl3
+R3
+S1
+R0
+w1682132949
+8/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/testbench.sv
+F/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/testbench.sv
+!i122 40
+L0 2 32
+R5
+r1
+!s85 0
+31
+!s108 1682134161.000000
+!s107 /home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/testbench.sv|
+!s90 -reportprogress|300|-work|work|/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/testbench.sv|
+!i113 1
+R6
+R7
