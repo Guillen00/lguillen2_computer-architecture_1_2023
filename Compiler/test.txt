@@ -1,0 +1,4 @@
+start:
+ADDR R1, R2, R3
+ADDDI R2, R3, 4
+LFM R5, [R6+4]
