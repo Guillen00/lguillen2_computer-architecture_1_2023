@@ -45,5 +45,23 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -sv -work work +incdir+/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto\ 2/procesador-pipeline-final/procesador-pipeline {/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/dmem_rom.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/adder.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/sign_extend.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/jump_unit.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryAccess.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_ram.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/mux_2to1.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/mux_4to1.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/pc_register.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/segment_ex_mem.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/segment_id_ex.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/segment_if_id.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/segment_mem_wb.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/alu.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/control_unit.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/procesador_pipeline.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/register_file.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv}
 

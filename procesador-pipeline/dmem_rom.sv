@@ -9,7 +9,7 @@ module dmem_rom (input logic [31:0] address,
 		// DIRECCIÓN DE JOSE
 		//$readmemh("C:/altera/14.1/procesador_pipeline/imageData.txt", dmem_ROM);
 		// DIRECCIÓN DE NACHO NAVARRO
-		$readmemh("/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/imageData.txt", dmem_ROM);
+		$readmemh("/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imageData.txt", dmem_ROM);
 		
 		
 	assign rd = dmem_ROM[address[31:0]];

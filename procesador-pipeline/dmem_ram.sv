@@ -5,7 +5,7 @@ module dmem_ram(input logic switchStart, clk, we,
     logic [31:0] dmem_RAM[0:129599];
     // synthesis translate_off
     always @(switchStart)
-    $writememh("/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/imageOutput.txt", dmem_RAM);
+    $writememh("/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imageOutput.txt", dmem_RAM);
     // synthesis translate_on
 
     // Memory meant to be read.

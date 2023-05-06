@@ -9,7 +9,7 @@ module imem (input logic [31:0] pc,
 		// DIRECCIÓN DE JOSE
 		//$readmemh("C:/altera/14.1/procesador_pipeline/instructions.txt", imem_ROM);
 		// DIRECCIÓN DE NACHO NAVARRO
-		$readmemh("/home/guillen/Downloads/Arqui/proyecto2_arqui_hecho/Proyecto 2/procesador-pipeline-final/procesador-pipeline/instructions.txt", imem_ROM);
+		$readmemh("/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt", imem_ROM);
 		
 		
 	assign instruction = imem_ROM[pc[31:0]];
