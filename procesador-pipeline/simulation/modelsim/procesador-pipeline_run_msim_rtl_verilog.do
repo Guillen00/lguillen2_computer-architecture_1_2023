@@ -64,4 +64,5 @@ vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-ar
 vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/register_file.sv}
 vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv}
 vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv}
+vlog -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline {/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_seno.sv}
 

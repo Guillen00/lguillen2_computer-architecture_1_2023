@@ -3,11 +3,12 @@ module memoryController (input logic clk, we, switchStart,
 					 output logic [31:0] rd, instruction
 );
 						 
-	logic [31:0] mapAddressROM, mapAddressRAM, mapAddressInstructions, romData, ramData, instructionData;
+	logic [31:0] mapAddressROM, mapAddressRAM, mapAddressInstructions, romData, ramData, instructionData,mapAddressSENO,SENOData;
 						 
 	dmem_ram ram (switchStart, clk, we, mapAddressRAM, wd, ramData);
 	dmem_rom rom (mapAddressROM, romData);
 	imem imem_rom (mapAddressInstructions, instructionData);
+	dmem_seno seno (mapAddressSENO, SENOData);
 	
 	always_latch
 		begin
@@ -33,11 +34,18 @@ module memoryController (input logic clk, we, switchStart,
 					rd = ramData;
 				end
 				
+			else if (address >= 'd138100 && address < 'd138400)
+				begin
+					mapAddressSENO = address - 'd138100;
+					rd = SENOData;
+				end
+				
 			// Case if nothing happens.
 			else
 				begin
 					mapAddressRAM = 32'b0;
 					mapAddressROM = 32'b0;
+					mapAddressSENO = 32'b0;
 					rd = 32'b0;
 				end
 		end

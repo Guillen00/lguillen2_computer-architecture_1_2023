@@ -1,5 +1,5 @@
 Analysis & Synthesis report for procesador-pipeline
-Fri May  5 21:03:54 2023
+Fri May  5 21:33:57 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -54,7 +54,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri May  5 21:03:54 2023          ;
+; Analysis & Synthesis Status     ; Successful - Fri May  5 21:33:57 2023          ;
 ; Quartus Prime Version           ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                   ; procesador-pipeline                            ;
 ; Top-level Entity Name           ; procesador_pipeline                            ;
@@ -201,7 +201,9 @@ https://fpgasoftware.intel.com/eula.
 ; control_unit.sv                  ; yes             ; User SystemVerilog HDL File  ; /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/control_unit.sv        ;         ;
 ; procesador_pipeline.sv           ; yes             ; User SystemVerilog HDL File  ; /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/procesador_pipeline.sv ;         ;
 ; register_file.sv                 ; yes             ; User SystemVerilog HDL File  ; /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/register_file.sv       ;         ;
+; dmem_seno.sv                     ; yes             ; User SystemVerilog HDL File  ; /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_seno.sv           ;         ;
 ; instructions.txt                 ; yes             ; Auto-Found File              ; /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt       ;         ;
+; seno.txt                         ; yes             ; Auto-Found File              ; /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/seno.txt               ;         ;
 ; imageData.txt                    ; yes             ; Auto-Found File              ; /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imageData.txt          ;         ;
 +----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------+---------+
 
@@ -382,7 +384,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Fri May  5 21:03:30 2023
+    Info: Processing started: Fri May  5 21:33:42 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off procesador-pipeline -c procesador-pipeline
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -428,6 +430,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file testben
     Info (12023): Found entity 1: testbench File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/testbench.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file memoryAccess_tb.sv
     Info (12023): Found entity 1: memoryAccess_tb File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryAccess_tb.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file dmem_seno.sv
+    Info (12023): Found entity 1: dmem_seno File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_seno.sv Line: 1
 Info (12127): Elaborating entity "procesador_pipeline" for the top level hierarchy
 Info (12128): Elaborating entity "pc_register" for hierarchy "pc_register:pc" File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/procesador_pipeline.sv Line: 39
 Warning (10036): Verilog HDL or VHDL warning at pc_register.sv(10): object "pc_temp" assigned a value but never read File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/pc_register.sv Line: 10
@@ -463,134 +467,166 @@ Info (12128): Elaborating entity "jump_unit" for hierarchy "jump_unit:jump_unit"
 Info (12128): Elaborating entity "segment_ex_mem" for hierarchy "segment_ex_mem:ex_mem" File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/procesador_pipeline.sv Line: 91
 Info (12128): Elaborating entity "memoryAccess" for hierarchy "memoryAccess:memory" File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/procesador_pipeline.sv Line: 96
 Info (12128): Elaborating entity "memoryController" for hierarchy "memoryAccess:memory|memoryController:memoryControllerUnit" File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryAccess.sv Line: 9
-Info (10041): Inferred latch for "mapAddressRAM[0]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[1]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[2]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[3]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[4]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[5]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[6]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[7]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[8]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[9]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[10]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[11]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[12]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[13]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[14]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[15]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[16]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[17]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[18]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[19]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[20]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[21]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[22]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[23]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[24]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[25]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[26]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[27]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[28]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[29]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[30]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressRAM[31]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[0]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[1]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[2]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[3]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[4]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[5]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[6]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[7]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[8]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[9]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[10]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[11]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[12]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[13]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[14]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[15]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[16]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[17]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[18]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[19]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[20]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[21]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[22]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[23]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[24]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[25]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[26]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[27]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[28]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[29]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[30]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "mapAddressROM[31]" at memoryController.sv(30) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 30
-Info (10041): Inferred latch for "instruction[0]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[1]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[2]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[3]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[4]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[5]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[6]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[7]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[8]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[9]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[10]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[11]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[12]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[13]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[14]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[15]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[16]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[17]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[18]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[19]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[20]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[21]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[22]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[23]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[24]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[25]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[26]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[27]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[28]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[29]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[30]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "instruction[31]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[0]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[1]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[2]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[3]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[4]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[5]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[6]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[7]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[8]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[9]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[10]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[11]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[12]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[13]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[14]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[15]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[16]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[17]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[18]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[19]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[20]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[21]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[22]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[23]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[24]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[25]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[26]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[27]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[28]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[29]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[30]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
-Info (10041): Inferred latch for "mapAddressInstructions[31]" at memoryController.sv(16) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 16
+Info (10041): Inferred latch for "mapAddressSENO[0]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[1]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[2]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[3]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[4]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[5]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[6]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[7]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[8]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[9]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[10]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[11]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[12]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[13]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[14]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[15]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[16]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[17]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[18]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[19]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[20]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[21]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[22]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[23]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[24]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[25]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[26]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[27]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[28]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[29]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[30]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressSENO[31]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[0]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[1]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[2]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[3]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[4]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[5]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[6]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[7]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[8]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[9]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[10]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[11]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[12]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[13]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[14]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[15]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[16]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[17]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[18]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[19]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[20]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[21]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[22]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[23]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[24]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[25]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[26]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[27]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[28]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[29]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[30]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressRAM[31]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[0]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[1]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[2]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[3]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[4]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[5]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[6]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[7]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[8]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[9]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[10]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[11]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[12]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[13]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[14]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[15]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[16]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[17]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[18]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[19]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[20]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[21]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[22]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[23]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[24]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[25]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[26]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[27]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[28]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[29]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[30]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "mapAddressROM[31]" at memoryController.sv(31) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 31
+Info (10041): Inferred latch for "instruction[0]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[1]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[2]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[3]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[4]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[5]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[6]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[7]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[8]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[9]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[10]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[11]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[12]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[13]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[14]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[15]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[16]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[17]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[18]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[19]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[20]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[21]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[22]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[23]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[24]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[25]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[26]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[27]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[28]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[29]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[30]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "instruction[31]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[0]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[1]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[2]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[3]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[4]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[5]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[6]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[7]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[8]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[9]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[10]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[11]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[12]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[13]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[14]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[15]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[16]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[17]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[18]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[19]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[20]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[21]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[22]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[23]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[24]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[25]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[26]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[27]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[28]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[29]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[30]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
+Info (10041): Inferred latch for "mapAddressInstructions[31]" at memoryController.sv(17) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 17
 Info (12128): Elaborating entity "dmem_ram" for hierarchy "memoryAccess:memory|memoryController:memoryControllerUnit|dmem_ram:ram" File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 8
 Warning (10230): Verilog HDL assignment warning at dmem_ram.sv(38): truncated value with size 63 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_ram.sv Line: 38
 Info (12128): Elaborating entity "dmem_rom" for hierarchy "memoryAccess:memory|memoryController:memoryControllerUnit|dmem_rom:rom" File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 9
@@ -602,6 +638,11 @@ Warning (10850): Verilog HDL warning at imem.sv(12): number of words (232) in me
 Warning (10030): Net "imem_ROM.data_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv Line: 4
 Warning (10030): Net "imem_ROM.waddr_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv Line: 4
 Warning (10030): Net "imem_ROM.we_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv Line: 4
+Info (12128): Elaborating entity "dmem_seno" for hierarchy "memoryAccess:memory|memoryController:memoryControllerUnit|dmem_seno:seno" File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 11
+Warning (10850): Verilog HDL warning at dmem_seno.sv(12): number of words (0) in memory file does not match the number of elements in the address range [0:8099] File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_seno.sv Line: 12
+Warning (10030): Net "dmem_seno.data_a" at dmem_seno.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_seno.sv Line: 4
+Warning (10030): Net "dmem_seno.waddr_a" at dmem_seno.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_seno.sv Line: 4
+Warning (10030): Net "dmem_seno.we_a" at dmem_seno.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_seno.sv Line: 4
 Info (12128): Elaborating entity "segment_mem_wb" for hierarchy "segment_mem_wb:mem_wb" File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/procesador_pipeline.sv Line: 102
 Info (144001): Generated suppressed messages file /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/output_files/procesador-pipeline.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -613,11 +654,11 @@ Warning (21074): Design contains 3 input pin(s) that do not drive logic
 Info (21057): Implemented 3 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 1046 megabytes
-    Info: Processing ended: Fri May  5 21:03:55 2023
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:40
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 472 megabytes
+    Info: Processing ended: Fri May  5 21:33:57 2023
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:32
 
 
 +------------------------------------------+
