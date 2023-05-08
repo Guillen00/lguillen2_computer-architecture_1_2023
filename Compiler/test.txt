@@ -1,4 +1,7 @@
 start:
-ADDR R1, R2, R3
-ADDDI R2, R3, 4
-LFM R5, [R6+4]
+ADDI R2, R3, 4
+ADDR R4, R2, R1
+LFM R5, 4[R6]
+JT R4, R5, loop
+loop:
+MULI R5, R5, 2

@@ -72,7 +72,7 @@ typeInstruction = {
 def getInstructions(file):
 
     # Special characters list
-    characters = [" ", ",", "]", "[", "+"]
+    characters = [" ", ",", "]", "["]
     # Variable to store the instructions from the file
     instructionsList = []
 
@@ -123,6 +123,141 @@ def getInstructions(file):
 
     return instructionsList
 
+def riskManagement(instructionsList, typeInstruction, opCode):
+    
+    firstCase = controlRiskStall(instructionsList, typeInstruction)
+    return firstCase
+
+# Control Risks
+def controlRiskStall(instructionsList, typeInstruction):
+
+    instructionsListAux = instructionsList.copy()
+    instructionsListAux.append("+")
+    
+    stall = ['ADDR', 'R0', 'R0', 'R0', "********************"]
+    index = 0
+
+    for instruction in instructionsListAux:
+
+        if(len(instruction) > 1):
+
+            # Get name of instruction
+            currentInstruction = instruction[0]
+            currentInstructionType = typeInstruction[currentInstruction]
+
+            # Is a Control instruction
+            if(currentInstructionType == "00"):
+
+                instructionsListAux.insert(index + 1, stall)
+                instructionsListAux.insert(index + 2, stall)
+                instructionsListAux.insert(index + 3, stall)
+                instructionsListAux.insert(index + 4, stall)
+
+        index += 1
+
+    return instructionsListAux
+
+# 0 instructions between them
+# Case 1
+def insertFirstStall(instructionsList, typeInstruction, opCode):
+
+    instructionsListAux = instructionsList.copy()
+    instructionsListAux.append("+")
+    
+    stall = ['ADDR', 'R0', 'R0', 'R0', "********************"]
+    index = 0
+
+    for instruction in instructionsListAux:
+
+        if(len(instruction) > 1):
+
+            if(instructionsListAux[index + 1] == "+"):
+                break
+
+        # Get name of instruction
+        currentInstructionName = instruction[0]
+        currentInstructionType = typeInstruction[currentInstructionName]
+
+        # Obtain RD
+        rDestiny = instruction[1]
+
+        if(rDestiny != "R0"):
+
+            # Next is instruction
+            if(len(instructionsListAux[index + 1]) > 1):
+                nextInstructionAux = instructionsListAux[index + 1]
+
+            # Next is Label
+            else:
+                nextInstructionAux = instructionsListAux[index + 2]
+
+        nextInstructionName = nextInstructionAux[0]
+
+        nextInstructionType = typeInstruction[nextInstructionName]
+
+        # Is Memory
+        if(currentInstructionType == "01" and currentInstructionName == "LFM"):
+
+            # Next is Control
+            if(nextInstructionType == "00"):
+
+                nextInstructionOpCode = opCode[nextInstructionName]
+
+                # Conditional or Inconditional
+                nextCondition = nextInstructionOpCode[0]
+
+                # Conditional
+                if(nextCondition == "1"):
+
+                    nextFirstRegister = nextInstructionAux[1]
+                    nextSecondRegister = nextInstructionAux[2]
+
+                    if(rDestiny == nextFirstRegister or rDestiny == nextSecondRegister):
+
+                        instructionsListAux.insert(index + 1, stall)
+                        instructionsListAux.insert(index + 2, stall)
+                        instructionsListAux.insert(index + 3, stall)
+
+            # Next is Memory
+            elif(nextInstructionType == "01"):
+
+                nextInstructionOpCode = opCode[nextInstructionName]
+                # Load or Store
+                nextLoadorStore = nextInstructionOpCode[0]
+
+                # Store
+                if(nextLoadorStore == "0"):
+
+                    nextSourceRegister = nextInstructionAux[1]
+                    nextDestinyRegister = nextInstructionAux[3]
+
+                    if(rDestiny == nextSourceRegister or rDestiny == nextDestinyRegister):
+
+                        instructionsListAux.insert(index + 1, stall)
+                        instructionsListAux.insert(index + 2, stall)
+                        instructionsListAux.insert(index + 3, stall)
+
+                # Load
+                else:
+
+                    nextSourceRegister = nextInstructionAux[3]
+
+                    if(rDestiny == nextSourceRegister):
+
+                        instructionsListAux.insert(index + 1, stall)
+                        instructionsListAux.insert(index + 2, stall)
+                        instructionsListAux.insert(index + 3, stall)
+            
+            # Next is Data
+
+
+
+
+
+
+    return
 
 testInstructions = getInstructions('test.txt')
-print(testInstructions)
+print("Instructions: ", testInstructions)
+testInstructions = riskManagement(testInstructions, typeInstruction, opCode)
+print("Instructions Risk First: ", testInstructions)
