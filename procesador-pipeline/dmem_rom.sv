@@ -5,10 +5,7 @@ module dmem_rom (input logic [31:0] address,
 	
 	initial
 	
-		// Data meant to be read
-		// DIRECCIÓN DE JOSE
-		//$readmemh("C:/altera/14.1/procesador_pipeline/imageData.txt", dmem_ROM);
-		// DIRECCIÓN DE NACHO NAVARRO
+		
 		$readmemh("/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imageData.txt", dmem_ROM);
 		
 		
