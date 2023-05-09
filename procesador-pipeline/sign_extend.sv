@@ -1,8 +1,9 @@
 module sign_extend(input logic [27:0] num_in,
 							input logic [1:0] imm_src,
 							output logic [31:0] num_out);
-
+							
 	always_comb
+		//Concatena el valor num_in consigomismo para dar un valor de 32 bits
 		case(imm_src)
 		
 			// 27-bit unsigned immediate

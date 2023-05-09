@@ -6,7 +6,7 @@ module alu( input [31:0] A, B,
 	reg [31:0] alu_out_temp;
 	
 	always @(*)
-	
+	//Casos de la ALU en sus diferentes operaciones
 		case (sel)
 		
 			// caso de la suma

@@ -17,7 +17,7 @@ module register_file(
 
 	logic [31:0] RD1_temp, RD2_temp, RD3_temp;
 	
-	//always_ff @(posedge clk) begin
+
 	always @(*) begin
 		
 		case (RS1)

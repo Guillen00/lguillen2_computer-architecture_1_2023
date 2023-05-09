@@ -6,13 +6,7 @@ module jump_unit(
 	output PCSource
 	);
 	
-	// xor_gate = FlagZ ^ JumpCD
-	
-	// and_gate_1 = (FlagZ ^ JumpCD) & JumpCD	
-	
-	// and_gate_2 = FlagZ & JumpCI	
-	
-	// or_gate = ((FlagZ ^ JumpCD) & JumpCD) | JumpI | (FlagZ & JumpCI)
+	//Opera el valor de las banderas dando como resultado un PC
 	
 	assign PCSource = ((FlagZ ^ JumpCD) & JumpCD) | JumpI | (FlagZ & JumpCI);
 	

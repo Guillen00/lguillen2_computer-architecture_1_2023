@@ -5,10 +5,7 @@ module imem (input logic [31:0] pc,
 	
 	initial
 	
-		// Instructions memory.
-		// DIRECCIÓN DE JOSE
-		//$readmemh("C:/altera/14.1/procesador_pipeline/instructions.txt", imem_ROM);
-		// DIRECCIÓN DE NACHO NAVARRO
+		//Lee de memoria las intrucciones
 		$readmemh("/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt", imem_ROM);
 		
 		

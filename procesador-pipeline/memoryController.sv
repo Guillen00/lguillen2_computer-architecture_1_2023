@@ -13,34 +13,34 @@ module memoryController (input logic clk, we, switchStart,
 	always_latch
 		begin
 		
-			// Reading instructions.
+			// Lee las intrucciones en ROM.
 			if (pc >= 'd0 && pc < 'd399)
 				begin
 					mapAddressInstructions = pc;
 					instruction = instructionData;
 				end
 		
-			// Reading data from Rom.
+			// Lee valores de pixeles en ROM.
 			if (address >= 'd400 && address < 'd8500)
 				begin
 					mapAddressROM = address - 'd400;
 					rd = romData;
 				end
 			
-			// Reading or writing from Ram.
+			// Guarda y lee valores en RAM.
 			else if (address >= 'd8500 && address < 'd138100)
 				begin
 					mapAddressRAM = address - 'd8500;
 					rd = ramData;
 				end
-				
+			//Obtiene el valor del seno respectivo	
 			else if (address >= 'd138100 && address < 'd138400)
 				begin
 					mapAddressSENO = address - 'd138100;
 					rd = SENOData;
 				end
 				
-			// Case if nothing happens.
+			// Caso por deafult
 			else
 				begin
 					mapAddressRAM = 32'b0;

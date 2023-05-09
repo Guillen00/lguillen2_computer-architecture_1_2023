@@ -5,7 +5,7 @@ module dmem_rom (input logic [31:0] address,
 	
 	initial
 	
-		
+		//Lee de memoria
 		$readmemh("/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imageData.txt", dmem_ROM);
 		
 		
