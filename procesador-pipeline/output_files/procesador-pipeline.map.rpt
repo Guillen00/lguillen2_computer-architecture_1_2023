@@ -1,5 +1,5 @@
 Analysis & Synthesis report for procesador-pipeline
-Tue May  9 07:50:22 2023
+Thu May 11 23:20:17 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -54,7 +54,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May  9 07:50:22 2023          ;
+; Analysis & Synthesis Status     ; Successful - Thu May 11 23:20:17 2023          ;
 ; Quartus Prime Version           ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                   ; procesador-pipeline                            ;
 ; Top-level Entity Name           ; procesador_pipeline                            ;
@@ -384,7 +384,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Tue May  9 07:50:09 2023
+    Info: Processing started: Thu May 11 23:09:46 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off procesador-pipeline -c procesador-pipeline
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -631,12 +631,12 @@ Info (12128): Elaborating entity "dmem_ram" for hierarchy "memoryAccess:memory|m
 Warning (10175): Verilog HDL warning at dmem_ram.sv(7): ignoring unsupported system task File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_ram.sv Line: 7
 Warning (10230): Verilog HDL assignment warning at dmem_ram.sv(25): truncated value with size 63 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_ram.sv Line: 25
 Info (12128): Elaborating entity "dmem_rom" for hierarchy "memoryAccess:memory|memoryController:memoryControllerUnit|dmem_rom:rom" File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 9
-Warning (10850): Verilog HDL warning at dmem_rom.sv(9): number of words (90000) in memory file does not match the number of elements in the address range [0:8099] File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 9
-Warning (10030): Net "dmem_ROM.data_a" at dmem_rom.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 4
-Warning (10030): Net "dmem_ROM.waddr_a" at dmem_rom.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 4
-Warning (10030): Net "dmem_ROM.we_a" at dmem_rom.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 4
+Warning (10850): Verilog HDL warning at dmem_rom.sv(10): number of words (90000) in memory file does not match the number of elements in the address range [0:90000] File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 10
+Warning (10030): Net "dmem_ROM.data_a" at dmem_rom.sv(5) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 5
+Warning (10030): Net "dmem_ROM.waddr_a" at dmem_rom.sv(5) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 5
+Warning (10030): Net "dmem_ROM.we_a" at dmem_rom.sv(5) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 5
 Info (12128): Elaborating entity "imem" for hierarchy "memoryAccess:memory|memoryController:memoryControllerUnit|imem:imem_rom" File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 10
-Warning (10850): Verilog HDL warning at imem.sv(9): number of words (232) in memory file does not match the number of elements in the address range [0:399] File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv Line: 9
+Warning (10850): Verilog HDL warning at imem.sv(9): number of words (76) in memory file does not match the number of elements in the address range [0:399] File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv Line: 9
 Warning (10030): Net "imem_ROM.data_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv Line: 4
 Warning (10030): Net "imem_ROM.waddr_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv Line: 4
 Warning (10030): Net "imem_ROM.we_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv Line: 4
@@ -657,10 +657,10 @@ Info (21057): Implemented 3 device resources after synthesis - the final resourc
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
-    Info: Peak virtual memory: 448 megabytes
-    Info: Processing ended: Tue May  9 07:50:22 2023
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Peak virtual memory: 1043 megabytes
+    Info: Processing ended: Thu May 11 23:20:17 2023
+    Info: Elapsed time: 00:10:31
+    Info: Total CPU time (on all processors): 00:10:44
 
 
 +------------------------------------------+
