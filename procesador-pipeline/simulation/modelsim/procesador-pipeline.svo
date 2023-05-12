@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition"
 
-// DATE "05/11/2023 23:21:39"
+// DATE "05/12/2023 01:16:16"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -33,9 +33,9 @@ module procesador_pipeline (
 	clk,
 	rst,
 	switchStart);
-input 	reg clk ;
-input 	reg rst ;
-input 	reg switchStart ;
+input 	clk;
+input 	rst;
+input 	switchStart;
 
 // Design Ports Information
 // clk	=>  Location: PIN_AD19,	 I/O Standard: 2.5 V,	 Current Strength: Default

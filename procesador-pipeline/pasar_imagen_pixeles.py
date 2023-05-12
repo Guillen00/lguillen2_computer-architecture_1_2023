@@ -20,4 +20,4 @@ with open("imagen_leon.txt", "w") as f:
             f.write("\n")
             
         # Agregamos un salto de línea al final de cada fila
-        f.write("\n")
+        #f.write("\n")

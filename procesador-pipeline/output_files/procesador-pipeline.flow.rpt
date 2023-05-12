@@ -1,5 +1,5 @@
 Flow report for procesador-pipeline
-Thu May 11 23:21:40 2023
+Fri May 12 10:28:22 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -41,25 +41,25 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Thu May 11 23:21:40 2023          ;
+; Flow Status                     ; Successful - Fri May 12 10:28:22 2023          ;
 ; Quartus Prime Version           ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                   ; procesador-pipeline                            ;
 ; Top-level Entity Name           ; procesador_pipeline                            ;
 ; Family                          ; Cyclone V                                      ;
 ; Device                          ; 5CSEMA5F31C6                                   ;
 ; Timing Models                   ; Final                                          ;
-; Logic utilization (in ALMs)     ; 1 / 32,070 ( < 1 % )                           ;
+; Logic utilization (in ALMs)     ; N/A                                            ;
 ; Total registers                 ; 0                                              ;
-; Total pins                      ; 3 / 457 ( < 1 % )                              ;
+; Total pins                      ; 3                                              ;
 ; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                          ;
-; Total DSP Blocks                ; 0 / 87 ( 0 % )                                 ;
+; Total block memory bits         ; 0                                              ;
+; Total DSP Blocks                ; 0                                              ;
 ; Total HSSI RX PCSs              ; 0                                              ;
 ; Total HSSI PMA RX Deserializers ; 0                                              ;
 ; Total HSSI TX PCSs              ; 0                                              ;
 ; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0 / 6 ( 0 % )                                  ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                  ;
+; Total PLLs                      ; 0                                              ;
+; Total DLLs                      ; 0                                              ;
 +---------------------------------+------------------------------------------------+
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/11/2023 23:09:47 ;
+; Start date & time ; 05/12/2023 10:28:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; procesador-pipeline ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------------+---------------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value       ; Entity Name         ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------------+---------------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 180655743481036.168386818704374        ; --                  ; --                  ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 180655743481036.168390889017846        ; --                  ; --                  ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                  ; --                  ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                  ; --                  ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --                  ; --                  ; eda_board_design_signal_integrity ;
@@ -104,12 +104,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:10:31     ; 1.0                     ; 1043 MB             ; 00:10:44                           ;
-; Fitter               ; 00:00:59     ; 1.0                     ; 1536 MB             ; 00:01:19                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 538 MB              ; 00:00:07                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.0                     ; 772 MB              ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 690 MB              ; 00:00:01                           ;
-; Total                ; 00:11:46     ; --                      ; --                  ; 00:12:15                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 434 MB              ; 00:00:29                           ;
+; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:29                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -119,10 +115,6 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname      ; OS Name        ; OS Version ; Processor type ;
 +----------------------+-----------------------+----------------+------------+----------------+
 ; Analysis & Synthesis ; guillen-ThinkPad-T430 ; Ubuntu 20.04.6 ; 20         ; x86_64         ;
-; Fitter               ; guillen-ThinkPad-T430 ; Ubuntu 20.04.6 ; 20         ; x86_64         ;
-; Assembler            ; guillen-ThinkPad-T430 ; Ubuntu 20.04.6 ; 20         ; x86_64         ;
-; Timing Analyzer      ; guillen-ThinkPad-T430 ; Ubuntu 20.04.6 ; 20         ; x86_64         ;
-; EDA Netlist Writer   ; guillen-ThinkPad-T430 ; Ubuntu 20.04.6 ; 20         ; x86_64         ;
 +----------------------+-----------------------+----------------+------------+----------------+
 
 
@@ -130,10 +122,6 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off procesador-pipeline -c procesador-pipeline
-quartus_fit --read_settings_files=off --write_settings_files=off procesador-pipeline -c procesador-pipeline
-quartus_asm --read_settings_files=off --write_settings_files=off procesador-pipeline -c procesador-pipeline
-quartus_sta procesador-pipeline -c procesador-pipeline
-quartus_eda --read_settings_files=off --write_settings_files=off procesador-pipeline -c procesador-pipeline
 
 
 

@@ -21,24 +21,28 @@ module memoryController (input logic clk, we, switchStart,
 				end
 		
 			// Lee valores de pixeles en ROM.
-			if (address >= 'd400 && address < 'd90400)
+			//if (address >= 'd400 && address < 'd90400)
+			if (address >= 'd400 && address < 'd8500)
 				begin
 					mapAddressROM = address - 'd400;
 					rd = romData;
 				end
 			
-			// Guarda y lee valores en RAM.
-			else if (address >= 'd90400 && address < 'd220000)
-				begin
-					mapAddressRAM = address - 'd8500;
-					rd = ramData;
-				end
 			//Obtiene el valor del seno respectivo	
-			else if (address >= 'd220000 && address < 'd220300)
+			else if (address >= 'd8500 && address < 'd8800)
 				begin
-					mapAddressSENO = address - 'd220000;
+					mapAddressSENO = address - 'd8500;
 					rd = SENOData;
 				end
+			// Guarda y lee valores en RAM.
+			//else if (address >= 'd90400 && address < 'd220000)
+			else if (address >= 'd8900 && address < 'd138100)
+				begin
+					//mapAddressRAM = address - 'd90400;
+					mapAddressRAM = address - 'd8900;
+					rd = ramData;
+				end
+			
 				
 			// Caso por deafult
 			else
