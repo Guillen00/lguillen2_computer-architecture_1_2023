@@ -1147,3 +1147,8 @@ vsim work.testbench
 # Loading work.dmem_seno
 # Loading work.segment_mem_wb
 run -all
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 19:44:16 on May 12,2023, Elapsed time: 0:07:52
+# Errors: 0, Warnings: 0
