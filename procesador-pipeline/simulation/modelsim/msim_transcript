@@ -1115,3 +1115,35 @@ vsim work.testbench
 # Loading work.dmem_seno
 # Loading work.segment_mem_wb
 run -all
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 19:25:46 on May 12,2023, Elapsed time: 0:34:59
+# Errors: 0, Warnings: 0
+# Break key hit
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 19:36:24 on May 12,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.procesador_pipeline
+# Loading work.pc_register
+# Loading work.adder
+# Loading work.mux_2to1
+# Loading work.segment_if_id
+# Loading work.control_unit
+# Loading work.mux_4to1
+# Loading work.sign_extend
+# Loading work.register_file
+# Loading work.segment_id_ex
+# Loading work.alu
+# Loading work.jump_unit
+# Loading work.segment_ex_mem
+# Loading work.memoryAccess
+# Loading work.memoryController
+# Loading work.dmem_ram
+# Loading work.dmem_rom
+# Loading work.imem
+# Loading work.dmem_seno
+# Loading work.segment_mem_wb
+run -all
