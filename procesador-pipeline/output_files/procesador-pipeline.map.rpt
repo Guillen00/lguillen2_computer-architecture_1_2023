@@ -1,5 +1,5 @@
 Analysis & Synthesis report for procesador-pipeline
-Fri May 12 10:28:22 2023
+Fri May 12 17:32:05 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -54,7 +54,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri May 12 10:28:22 2023          ;
+; Analysis & Synthesis Status     ; Successful - Fri May 12 17:32:05 2023          ;
 ; Quartus Prime Version           ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                   ; procesador-pipeline                            ;
 ; Top-level Entity Name           ; procesador_pipeline                            ;
@@ -384,7 +384,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Fri May 12 10:28:10 2023
+    Info: Processing started: Fri May 12 17:22:02 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off procesador-pipeline -c procesador-pipeline
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -631,58 +631,12 @@ Info (12128): Elaborating entity "dmem_ram" for hierarchy "memoryAccess:memory|m
 Warning (10175): Verilog HDL warning at dmem_ram.sv(7): ignoring unsupported system task File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_ram.sv Line: 7
 Warning (10230): Verilog HDL assignment warning at dmem_ram.sv(25): truncated value with size 63 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_ram.sv Line: 25
 Info (12128): Elaborating entity "dmem_rom" for hierarchy "memoryAccess:memory|memoryController:memoryControllerUnit|dmem_rom:rom" File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 9
-Warning (10850): Verilog HDL warning at dmem_rom.sv(10): number of words (90000) in memory file does not match the number of elements in the address range [0:8099] File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 10
-Warning (10030): Net "dmem_ROM.data_a" at dmem_rom.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 4
-Warning (10030): Net "dmem_ROM.waddr_a" at dmem_rom.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 4
-Warning (10030): Net "dmem_ROM.we_a" at dmem_rom.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 4
+Warning (10850): Verilog HDL warning at dmem_rom.sv(10): number of words (90000) in memory file does not match the number of elements in the address range [0:90000] File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 10
+Warning (10030): Net "dmem_ROM.data_a" at dmem_rom.sv(5) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 5
+Warning (10030): Net "dmem_ROM.waddr_a" at dmem_rom.sv(5) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 5
+Warning (10030): Net "dmem_ROM.we_a" at dmem_rom.sv(5) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_rom.sv Line: 5
 Info (12128): Elaborating entity "imem" for hierarchy "memoryAccess:memory|memoryController:memoryControllerUnit|imem:imem_rom" File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv Line: 10
-Warning (10850): Verilog HDL warning at imem.sv(9): number of words (46) in memory file does not match the number of elements in the address range [0:399] File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv Line: 9
-Warning (10230): Verilog HDL assignment warning at instructions.txt(1): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 1
-Warning (10230): Verilog HDL assignment warning at instructions.txt(2): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 2
-Warning (10230): Verilog HDL assignment warning at instructions.txt(3): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 3
-Warning (10230): Verilog HDL assignment warning at instructions.txt(4): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 4
-Warning (10230): Verilog HDL assignment warning at instructions.txt(5): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 5
-Warning (10230): Verilog HDL assignment warning at instructions.txt(6): truncated value with size 100 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 6
-Warning (10230): Verilog HDL assignment warning at instructions.txt(7): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 7
-Warning (10230): Verilog HDL assignment warning at instructions.txt(8): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 8
-Warning (10230): Verilog HDL assignment warning at instructions.txt(9): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 9
-Warning (10230): Verilog HDL assignment warning at instructions.txt(10): truncated value with size 100 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 10
-Warning (10230): Verilog HDL assignment warning at instructions.txt(11): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 11
-Warning (10230): Verilog HDL assignment warning at instructions.txt(12): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 12
-Warning (10230): Verilog HDL assignment warning at instructions.txt(13): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 13
-Warning (10230): Verilog HDL assignment warning at instructions.txt(14): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 14
-Warning (10230): Verilog HDL assignment warning at instructions.txt(15): truncated value with size 100 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 15
-Warning (10230): Verilog HDL assignment warning at instructions.txt(16): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 16
-Warning (10230): Verilog HDL assignment warning at instructions.txt(17): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 17
-Warning (10230): Verilog HDL assignment warning at instructions.txt(18): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 18
-Warning (10230): Verilog HDL assignment warning at instructions.txt(19): truncated value with size 100 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 19
-Warning (10230): Verilog HDL assignment warning at instructions.txt(20): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 20
-Warning (10230): Verilog HDL assignment warning at instructions.txt(21): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 21
-Warning (10230): Verilog HDL assignment warning at instructions.txt(22): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 22
-Warning (10230): Verilog HDL assignment warning at instructions.txt(23): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 23
-Warning (10230): Verilog HDL assignment warning at instructions.txt(24): truncated value with size 100 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 24
-Warning (10230): Verilog HDL assignment warning at instructions.txt(25): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 25
-Warning (10230): Verilog HDL assignment warning at instructions.txt(26): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 26
-Warning (10230): Verilog HDL assignment warning at instructions.txt(27): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 27
-Warning (10230): Verilog HDL assignment warning at instructions.txt(28): truncated value with size 100 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 28
-Warning (10230): Verilog HDL assignment warning at instructions.txt(29): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 29
-Warning (10230): Verilog HDL assignment warning at instructions.txt(30): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 30
-Warning (10230): Verilog HDL assignment warning at instructions.txt(31): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 31
-Warning (10230): Verilog HDL assignment warning at instructions.txt(32): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 32
-Warning (10230): Verilog HDL assignment warning at instructions.txt(33): truncated value with size 100 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 33
-Warning (10230): Verilog HDL assignment warning at instructions.txt(34): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 34
-Warning (10230): Verilog HDL assignment warning at instructions.txt(35): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 35
-Warning (10230): Verilog HDL assignment warning at instructions.txt(36): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 36
-Warning (10230): Verilog HDL assignment warning at instructions.txt(37): truncated value with size 100 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 37
-Warning (10230): Verilog HDL assignment warning at instructions.txt(38): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 38
-Warning (10230): Verilog HDL assignment warning at instructions.txt(39): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 39
-Warning (10230): Verilog HDL assignment warning at instructions.txt(40): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 40
-Warning (10230): Verilog HDL assignment warning at instructions.txt(41): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 41
-Warning (10230): Verilog HDL assignment warning at instructions.txt(42): truncated value with size 100 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 42
-Warning (10230): Verilog HDL assignment warning at instructions.txt(43): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 43
-Warning (10230): Verilog HDL assignment warning at instructions.txt(44): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 44
-Warning (10230): Verilog HDL assignment warning at instructions.txt(45): truncated value with size 104 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 45
-Warning (10230): Verilog HDL assignment warning at instructions.txt(46): truncated value with size 100 to match size of target (32) File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/instructions.txt Line: 46
+Warning (10850): Verilog HDL warning at imem.sv(9): number of words (27) in memory file does not match the number of elements in the address range [0:399] File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv Line: 9
 Warning (10030): Net "imem_ROM.data_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv Line: 4
 Warning (10030): Net "imem_ROM.waddr_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv Line: 4
 Warning (10030): Net "imem_ROM.we_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv Line: 4
@@ -702,11 +656,11 @@ Warning (21074): Design contains 3 input pin(s) that do not drive logic
 Info (21057): Implemented 3 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 66 warnings
-    Info: Peak virtual memory: 442 megabytes
-    Info: Processing ended: Fri May 12 10:28:22 2023
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:29
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 861 megabytes
+    Info: Processing ended: Fri May 12 17:32:05 2023
+    Info: Elapsed time: 00:10:03
+    Info: Total CPU time (on all processors): 00:10:18
 
 
 +------------------------------------------+
