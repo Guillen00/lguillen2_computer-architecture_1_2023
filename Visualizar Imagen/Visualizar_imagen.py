@@ -1,3 +1,5 @@
+from PIL import Image
+import numpy as np
 
 
 # También puedes guardar la línea completa en un nuevo archivo de texto
@@ -16,8 +18,7 @@ with open("nuevo_archivo.txt", "w") as f1:
                 f1.write(aux)
             f1.write(" ")
 
-from PIL import Image
-import numpy as np
+
 
 with open('nuevo_archivo.txt') as f:               #abrir los pixeles que contiene el txt
     contenido = f.readlines()

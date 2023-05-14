@@ -11,7 +11,7 @@ cModel Technology
 Z0 d/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/simulation/modelsim
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1683938052
+Z2 !s110 1684023404
 !i10b 1
 !s100 b9H^3F1k=j]Bz53HB0`B@0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1683938052.000000
+Z7 !s108 1684023404.000000
 !s107 /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline|/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/adder.sv|
 !i113 1
@@ -37,7 +37,7 @@ Z9 !s92 -sv -work work +incdir+/home/guillen/Documents/GitHub/lguillen2_computer
 Z10 tCvgOpt 0
 valu
 R1
-Z11 !s110 1683938053
+Z11 !s110 1684023405
 !i10b 1
 !s100 QJC;Y6DbeJS[[<9hY`Zj32
 R3
@@ -54,7 +54,7 @@ R6
 r1
 !s85 0
 31
-Z12 !s108 1683938053.000000
+Z12 !s108 1684023405.000000
 !s107 /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/alu.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline|/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/alu.sv|
 !i113 1
@@ -89,7 +89,7 @@ R9
 R10
 vdmem_ram
 R1
-R11
+R2
 !i10b 1
 !s100 ^6E5<0O<:W3of_92:E1RZ3
 R3
@@ -106,7 +106,7 @@ R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_ram.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline|/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_ram.sv|
 !i113 1
@@ -141,7 +141,7 @@ R9
 R10
 vdmem_seno
 R1
-Z15 !s110 1683938054
+R11
 !i10b 1
 !s100 DB`bloF<Na1_^0]b4g;_;2
 R3
@@ -153,12 +153,12 @@ R14
 8/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_seno.sv
 F/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_seno.sv
 !i122 19
-Z16 L0 1 14
+Z15 L0 1 14
 R6
 r1
 !s85 0
 31
-!s108 1683938054.000000
+R12
 !s107 /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_seno.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline|/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/dmem_seno.sv|
 !i113 1
@@ -167,7 +167,7 @@ R9
 R10
 vimem
 R1
-R15
+R11
 !i10b 1
 !s100 >K_b<G9Yg:m5I_>S;CdA20
 R3
@@ -179,7 +179,7 @@ R14
 8/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv
 F/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/imem.sv
 !i122 18
-R16
+R15
 R6
 r1
 !s85 0
@@ -219,7 +219,7 @@ R9
 R10
 vmemoryAccess
 R1
-R11
+R2
 !i10b 1
 !s100 25V[ojR1=>SBUOBS;k0lH0
 R3
@@ -246,7 +246,7 @@ R10
 nmemory@access
 vmemoryController
 R1
-R11
+R2
 !i10b 1
 !s100 X0adZho5FYj:W<dNkjiCk1
 R3
@@ -263,7 +263,7 @@ R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline|/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/memoryController.sv|
 !i113 1
@@ -273,7 +273,7 @@ R10
 nmemory@controller
 vmux_2to1
 R1
-R11
+R2
 !i10b 1
 !s100 b8jb8T=aW<fXX<LDbGfFn0
 R3
@@ -290,7 +290,7 @@ R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/mux_2to1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline|/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/mux_2to1.sv|
 !i113 1
@@ -299,7 +299,7 @@ R9
 R10
 vmux_4to1
 R1
-R11
+R2
 !i10b 1
 !s100 TU?hDiSIaLk4S5gdlXSf]3
 R3
@@ -316,7 +316,7 @@ R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/mux_4to1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline|/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/mux_4to1.sv|
 !i113 1
@@ -325,7 +325,7 @@ R9
 R10
 vpc_register
 R1
-R11
+R2
 !i10b 1
 !s100 `djE<hC9=CY=bA>61Z9JA1
 R3
@@ -342,7 +342,7 @@ R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/pc_register.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline|/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/pc_register.sv|
 !i113 1
@@ -420,7 +420,7 @@ R6
 r1
 !s85 0
 31
-R12
+R7
 !s107 /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/segment_ex_mem.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline|/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/segment_ex_mem.sv|
 !i113 1
@@ -533,7 +533,7 @@ R9
 R10
 vtestbench
 R1
-!s110 1683938061
+!s110 1684025040
 !i10b 1
 !s100 mB@]B=CFPFGV@V<`YdkDL3
 R3
@@ -544,13 +544,13 @@ R0
 w1683898800
 8/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/testbench.sv
 F/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/testbench.sv
-!i122 20
+!i122 21
 L0 2 32
 R6
 r1
 !s85 0
 31
-!s108 1683938061.000000
+!s108 1684025040.000000
 !s107 /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/testbench.sv|
 !s90 -reportprogress|300|-work|work|/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/testbench.sv|
 !i113 1
