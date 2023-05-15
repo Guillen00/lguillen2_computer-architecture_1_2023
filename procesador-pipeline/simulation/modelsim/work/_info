@@ -37,24 +37,24 @@ Z6 tCvgOpt 0
 nmemory@access_tb
 vtestbench
 R1
-!s110 1683897595
+!s110 1684126309
 !i10b 1
-!s100 YJVOJo8@FNB5AV<J5V9:Y0
+!s100 mB@]B=CFPFGV@V<`YdkDL3
 R2
-ID=BFeIT[zG`ZXAamM6]^80
+I6:`W]KV^3^3iNnnRhHZ>T0
 R3
 S1
 d/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/simulation/modelsim
-w1683896721
+w1683898800
 8/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/testbench.sv
 F/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/testbench.sv
-!i122 1
+!i122 2
 L0 2 32
 R4
 r1
 !s85 0
 31
-!s108 1683897595.000000
+!s108 1684126309.000000
 !s107 /home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/testbench.sv|
 !s90 -reportprogress|300|-work|work|/home/guillen/Documents/GitHub/lguillen2_computer-architecture_1_2023/procesador-pipeline/testbench.sv|
 !i113 1

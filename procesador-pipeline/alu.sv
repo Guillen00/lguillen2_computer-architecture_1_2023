@@ -24,6 +24,9 @@ module alu( input [31:0] A, B,
 			// caso del residuo
 			3'b100: alu_out_temp = A % B;
 			
+			// caso del CMP
+			3'b101: alu_out_temp = (A >= 0 && A < 300) ? 1 : 0;
+			
 			default: alu_out_temp = A + B; 
 		
 		endcase 

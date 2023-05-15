@@ -111,6 +111,11 @@
 					begin
 						ALUOp = 3'b100;
 					end
+				// CMP
+				if (func[4:0] == 5'b11101)
+					begin
+						ALUOp = 3'b101;
+					end
 
 			end
 			

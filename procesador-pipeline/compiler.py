@@ -34,6 +34,7 @@ opCode = {
     "SUBI": "11001",
     "MULI": "11010",
     "DIVI": "11011",
+    "CMP": "11101",
 
     # Memory:
     "SOM": "0",
@@ -59,6 +60,7 @@ type = {
     "SUBI": "10",
     "MULI": "10",
     "DIVI": "10",
+    "CMP": "10",
 
     # Memory:
     "SOM": "01",
