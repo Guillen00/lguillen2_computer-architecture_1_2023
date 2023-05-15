@@ -19,13 +19,9 @@ x = inicio
 while x <= fin:
     # Evaluamos la fórmula en el valor actual de x
     resultado = int(mi_formula(x))
-    if resultado < 0:
-        binario = bin(abs(resultado) & 0xFFFFFFFF)[2:].zfill(32)
-        complemento = ''.join('0' if bit == '1' else '1' for bit in binario)
-        resultado1 = bin(int(complemento, 2) + 1)[2:].zfill(32)
-        resultadofinal = hex(int(resultado1,2))[2:].zfill(8)
-    else:
-        resultadofinal = hex(resultado)[2:].zfill(8)
+    resultado1 = resultado+9999
+    print(resultado1)
+    resultadofinal = hex(resultado1)[2:].zfill(8)
     # Guardamos el resultado en el archivo de texto
     archivo.write(str(resultadofinal) + "\n")
     

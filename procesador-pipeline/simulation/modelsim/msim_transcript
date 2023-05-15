@@ -1200,3 +1200,246 @@ run -all
 quit -sim
 # End time: 23:49:28 on May 14,2023, Elapsed time: 0:02:20
 # Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 00:14:11 on May 15,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.procesador_pipeline
+# Loading work.pc_register
+# Loading work.adder
+# Loading work.mux_2to1
+# Loading work.segment_if_id
+# Loading work.control_unit
+# Loading work.mux_4to1
+# Loading work.sign_extend
+# Loading work.register_file
+# Loading work.segment_id_ex
+# Loading work.alu
+# Loading work.jump_unit
+# Loading work.segment_ex_mem
+# Loading work.memoryAccess
+# Loading work.memoryController
+# Loading work.dmem_ram
+# Loading work.dmem_rom
+# Loading work.imem
+# Loading work.dmem_seno
+# Loading work.segment_mem_wb
+run -all
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 00:27:00 on May 15,2023, Elapsed time: 0:12:49
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 00:27:03 on May 15,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.procesador_pipeline
+# Loading work.pc_register
+# Loading work.adder
+# Loading work.mux_2to1
+# Loading work.segment_if_id
+# Loading work.control_unit
+# Loading work.mux_4to1
+# Loading work.sign_extend
+# Loading work.register_file
+# Loading work.segment_id_ex
+# Loading work.alu
+# Loading work.jump_unit
+# Loading work.segment_ex_mem
+# Loading work.memoryAccess
+# Loading work.memoryController
+# Loading work.dmem_ram
+# Loading work.dmem_rom
+# Loading work.imem
+# Loading work.dmem_seno
+# Loading work.segment_mem_wb
+run -all
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 00:33:58 on May 15,2023, Elapsed time: 0:06:55
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 00:34:00 on May 15,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.procesador_pipeline
+# Loading work.pc_register
+# Loading work.adder
+# Loading work.mux_2to1
+# Loading work.segment_if_id
+# Loading work.control_unit
+# Loading work.mux_4to1
+# Loading work.sign_extend
+# Loading work.register_file
+# Loading work.segment_id_ex
+# Loading work.alu
+# Loading work.jump_unit
+# Loading work.segment_ex_mem
+# Loading work.memoryAccess
+# Loading work.memoryController
+# Loading work.dmem_ram
+# Loading work.dmem_rom
+# Loading work.imem
+# Loading work.dmem_seno
+# Loading work.segment_mem_wb
+run -all
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 00:42:04 on May 15,2023, Elapsed time: 0:08:04
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 00:42:09 on May 15,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.procesador_pipeline
+# Loading work.pc_register
+# Loading work.adder
+# Loading work.mux_2to1
+# Loading work.segment_if_id
+# Loading work.control_unit
+# Loading work.mux_4to1
+# Loading work.sign_extend
+# Loading work.register_file
+# Loading work.segment_id_ex
+# Loading work.alu
+# Loading work.jump_unit
+# Loading work.segment_ex_mem
+# Loading work.memoryAccess
+# Loading work.memoryController
+# Loading work.dmem_ram
+# Loading work.dmem_rom
+# Loading work.imem
+# Loading work.dmem_seno
+# Loading work.segment_mem_wb
+run -all
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 00:52:05 on May 15,2023, Elapsed time: 0:09:56
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 00:52:11 on May 15,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.procesador_pipeline
+# Loading work.pc_register
+# Loading work.adder
+# Loading work.mux_2to1
+# Loading work.segment_if_id
+# Loading work.control_unit
+# Loading work.mux_4to1
+# Loading work.sign_extend
+# Loading work.register_file
+# Loading work.segment_id_ex
+# Loading work.alu
+# Loading work.jump_unit
+# Loading work.segment_ex_mem
+# Loading work.memoryAccess
+# Loading work.memoryController
+# Loading work.dmem_ram
+# Loading work.dmem_rom
+# Loading work.imem
+# Loading work.dmem_seno
+# Loading work.segment_mem_wb
+run -all
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 01:01:24 on May 15,2023, Elapsed time: 0:09:13
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 01:01:27 on May 15,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.procesador_pipeline
+# Loading work.pc_register
+# Loading work.adder
+# Loading work.mux_2to1
+# Loading work.segment_if_id
+# Loading work.control_unit
+# Loading work.mux_4to1
+# Loading work.sign_extend
+# Loading work.register_file
+# Loading work.segment_id_ex
+# Loading work.alu
+# Loading work.jump_unit
+# Loading work.segment_ex_mem
+# Loading work.memoryAccess
+# Loading work.memoryController
+# Loading work.dmem_ram
+# Loading work.dmem_rom
+# Loading work.imem
+# Loading work.dmem_seno
+# Loading work.segment_mem_wb
+run -all
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 01:08:04 on May 15,2023, Elapsed time: 0:06:37
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 01:08:07 on May 15,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.procesador_pipeline
+# Loading work.pc_register
+# Loading work.adder
+# Loading work.mux_2to1
+# Loading work.segment_if_id
+# Loading work.control_unit
+# Loading work.mux_4to1
+# Loading work.sign_extend
+# Loading work.register_file
+# Loading work.segment_id_ex
+# Loading work.alu
+# Loading work.jump_unit
+# Loading work.segment_ex_mem
+# Loading work.memoryAccess
+# Loading work.memoryController
+# Loading work.dmem_ram
+# Loading work.dmem_rom
+# Loading work.imem
+# Loading work.dmem_seno
+# Loading work.segment_mem_wb
+run -all
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# End time: 01:13:57 on May 15,2023, Elapsed time: 0:05:50
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 01:13:59 on May 15,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.procesador_pipeline
+# Loading work.pc_register
+# Loading work.adder
+# Loading work.mux_2to1
+# Loading work.segment_if_id
+# Loading work.control_unit
+# Loading work.mux_4to1
+# Loading work.sign_extend
+# Loading work.register_file
+# Loading work.segment_id_ex
+# Loading work.alu
+# Loading work.jump_unit
+# Loading work.segment_ex_mem
+# Loading work.memoryAccess
+# Loading work.memoryController
+# Loading work.dmem_ram
+# Loading work.dmem_rom
+# Loading work.imem
+# Loading work.dmem_seno
+# Loading work.segment_mem_wb
+run -all
