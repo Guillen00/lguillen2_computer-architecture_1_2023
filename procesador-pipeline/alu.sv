@@ -25,7 +25,10 @@ module alu( input [31:0] A, B,
 			3'b100: alu_out_temp = A % B;
 			
 			// caso del CMP
-			3'b101: alu_out_temp = (A >= 0 && A < 300) ? 1 : 0;
+			3'b101: alu_out_temp = (A >= 0 && A < B) ? 1 : 0;
+			
+			// caso del test
+			3'b110: alu_out_temp = ((A - 1) / 37) % 2;
 			
 			default: alu_out_temp = A + B; 
 		

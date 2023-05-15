@@ -28,6 +28,7 @@ opCode = {
     "MULR": "00010",
     "DIVR": "00011",
     "XOR":  "00100",
+    "TEST":  "00110",
 
     # Data-Imm:
     "ADDI": "11000",
@@ -54,6 +55,7 @@ type = {
     "MULR": "10",
     "DIVR": "10",
     "XOR":  "10",
+    "TEST":  "10",
 
     # Data-Imm:
     "ADDI": "10",

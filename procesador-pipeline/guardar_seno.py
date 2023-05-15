@@ -19,9 +19,7 @@ x = inicio
 while x <= fin:
     # Evaluamos la fórmula en el valor actual de x
     resultado = int(mi_formula(x))
-    resultado1 = resultado+9999
-    print(resultado1)
-    resultadofinal = hex(resultado1)[2:].zfill(8)
+    resultadofinal = hex(abs(resultado))[2:].zfill(8)
     # Guardamos el resultado en el archivo de texto
     archivo.write(str(resultadofinal) + "\n")
     

@@ -68,6 +68,11 @@
 					begin
 						ALUOp = 3'b100;
 					end
+				// TEST
+				if (func[4:0] == 5'b00110)
+					begin
+						ALUOp = 3'b110;
+					end
 			end
 		
 		// Instrucciones de Datos con inmediato:
