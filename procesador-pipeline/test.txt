@@ -37,6 +37,7 @@ CMP R10,R8,300
 CMP R11,R9,300
 ADDR R12,R10,R11
 JT R12,R15,_guardar
+ADDI R2,R2,1
 JNT R6,R13,_sumarX
 JNT R5,R13,_sumarY
 JU _terminar
