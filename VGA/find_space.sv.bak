@@ -1,0 +1,47 @@
+module find_space (
+  input wire[1:0] pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,
+  output put_random,
+  output [3:0] position_random
+  );
+
+if (pos1 == 2'b00) begin
+	put_random <= 1'b1;
+	position_random = pos1;
+	end
+else if (pos2 == 2'b00) begin
+	put_random <= 1'b1;
+	position_random = pos2;
+	end
+else if (pos3 == 2'b00) begin
+	put_random <= 1'b1;
+	position_random = pos3;
+	end
+else if (pos4 == 2'b00) begin
+	put_random <= 1'b1;
+	position_random = pos4;
+	end
+else if (pos5 == 2'b00) begin
+	put_random <= 1'b1;
+	position_random = pos5;
+	end
+else if (pos6 == 2'b00) begin
+	put_random <= 1'b1;
+	position_random = pos6;
+	end
+else if (pos7 == 2'b00) begin
+	put_random <= 1'b1;
+	position_random = pos7;
+	end
+else if (pos8 == 2'b00) begin
+	put_random <= 1'b1;
+	position_random = pos8;
+	end
+else if (pos8 == 2'b00) begin
+	put_random <= 1'b1;
+	position_random = pos9;
+	end
+else begin
+	put_random <= 1'b0;
+	position_random = pos1;
+	end
+endmodule
