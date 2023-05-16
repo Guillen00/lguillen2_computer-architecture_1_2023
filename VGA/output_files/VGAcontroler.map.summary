@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Tue May 16 00:05:15 2023
+Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+Revision Name : VGAcontroler
+Top-level Entity Name : VGAcontroler
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 78
+Total pins : 36
+Total virtual pins : 0
+Total block memory bits : 2,160,000
+Total DSP Blocks : 1
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0
