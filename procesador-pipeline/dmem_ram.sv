@@ -15,8 +15,6 @@ module dmem_ram(input logic switchStart, clk, we,
                     if (address >= 'd0 && address <= 'd129599)
                         begin
                         dmem_RAM[address] <= wd;
-                        //$writememh("C:\altera\14.1\procesador_pipeline\imageOutput.txt", dmem_RAM);
-                        // DIRECCION DE NACHO NAVARRO
                         end
 
 
